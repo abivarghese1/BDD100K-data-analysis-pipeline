@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  analysis:
+    build: .
+    image: bdd100k-analysis:latest
+    volumes:
+      # Mount your local BDD100K folder into the container
+      - ./bdd100k:/app/bdd100k:ro
+      # Mount outputs folder so figures appear on your host machine
+      - ./outputs:/app/outputs
+    environment:
+      - PYTHONUNBUFFERED=1
