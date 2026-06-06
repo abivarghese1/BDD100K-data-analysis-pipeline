@@ -1,1 +1,22 @@
+# dataset — never commit
+bdd100k/
+
+# outputs — never commit
+outputs/
+
+# python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# IDE
 .idea/
+.vscode/
+
+# mac
+.DS_Store
+
+# temp scripts
+run_*.py
